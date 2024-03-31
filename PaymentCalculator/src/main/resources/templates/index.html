@@ -11,6 +11,7 @@
     <form action="/calculacte" method="get">
         <input type="text" required="required" min="12000" id="nick" name="salary" placeholder="Введите среднюю зарплату за 12 месяцев" class="form-control mb-3">
         <input type="text" required="required" min="1" max="56" name="vacationSum" placeholder="Введите количество дней в отпуске" class="form-control mb-3">
+        <span>(Опционально) Дата первого дня отпуска - Расчёт с учётом выходных</span>
         <input type="date" name="startDate" placeholder="(Опционально) Введите дату первого дня отпуска - Расчёт с учётом выходных" class="form-control mb-3">
         <button type="submit" class="btn btn-success">Рассчитать</button>
         <span class="text-bg-warning" id="result" th:utext="${result}"></span>
